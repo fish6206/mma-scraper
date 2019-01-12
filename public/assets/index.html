@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MMMA Stream</title>
+
+  <style>
+    .backgroundNgannu {
+      background-image: url("http://www.fight-madness.com/wp-content/uploads/2017/02/UFC-Logo-640x370-608x280.jpg"), url("http://www.fight-madness.com/wp-content/uploads/2017/02/UFC-Logo-640x370-608x280.jpg");
+      background-repeat: repeat-y;
+      background-position: left top, right top;
+      background-size: 20%, 20%;
+    }
+
+    .backgroundWandy {
+      background-image: url("http://entimports.com/wp-content/uploads/2016/01/PRIDE-FC-logo.jpg"), url("http://entimports.com/wp-content/uploads/2016/01/PRIDE-FC-logo.jpg");
+      background-repeat: repeat-y;
+      background-position: left top, right top;
+      background-size: 20%;
+    }
+
+    .backgroundGracie {
+      background-image: url("http://cdn1.sbnation.com/imported_assets/1021651/ufc-11.jpg"), url("http://cdn1.sbnation.com/imported_assets/1021651/ufc-11.jpg");
+      background-repeat: repeat-y;
+      background-position: left top, right top;
+      background-size: 20%;
+    }
+
+    .backgroundMpage {
+      background-image: url("https://cdn.vox-cdn.com/thumbor/M0AVENmiCMvCDZb2_pJOa0TdFt8=/57x0:402x230/1200x800/filters:focal(57x0:402x230)/cdn.vox-cdn.com/uploads/chorus_image/image/958203/bellator-logo-e1332073235912.0.jpg"), url("https://cdn.vox-cdn.com/thumbor/M0AVENmiCMvCDZb2_pJOa0TdFt8=/57x0:402x230/1200x800/filters:focal(57x0:402x230)/cdn.vox-cdn.com/uploads/chorus_image/image/958203/bellator-logo-e1332073235912.0.jpg");
+      background-repeat: repeat-y;
+      background-position: left top, right top;
+      background-size: 20%;
+    }
+
+    .backgroundCro-cop {
+      background-image: url("http://realcombatmedia.com/wp-content/uploads/2013/01/k1logo.jpg"), url("http://realcombatmedia.com/wp-content/uploads/2013/01/k1logo.jpg");
+      background-repeat: repeat-y;
+      background-position: left top, right top;
+      background-size: 20%;
+    }
+
+    .header {
+      text-align: center;
+      position: sticky;
+      top: 0;
+      background-color: white;
+    }
+
+    .card-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      padding-bottom: 3%;
+    }
+
+    .card-img:hover {
+      animation: shake 0.25s;
+      animation-iteration-count: infinite;
+      cursor: pointer;
+    }
+
+    .shake {
+      animation: shake 0.25s;
+      animation-iteration-count: infinite;
+    }
+
+    .img-hidden {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 100%;
+      overflow: hidden;
+      width: 0;
+      height: 100%;
+      transition: .5s ease;
+    }
+
+    .img-display {
+      display: block;
+      width: 100%;
+      height: 250px;
+      border-radius: 25px;
+    }
+
+
+    #wrapper {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 5%;
+    }
+
+    #articles {
+      display: inline-block;
+      overflow: auto;
+      width: 60%;
+      height: 900px;
+    }
+
+    #notes {
+      float: right;
+      width: 30%;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      background-color: rgb(224, 226, 217);
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="backgroundNgannu">
+
+  <div id="wrapper">
+    <div class="header">
+      <h1>MMA Stream</h1>
+      <!--UFC card carousel-->
+      <div class="card-img">
+        <img id="ngannu" class="img-display" src="https://i.ytimg.com/vi/UrrTJmJtfHY/hqdefault.jpg" alt="Card image"
+          alt="ngannu">
+        <img id="wandy" class="img-hidden" src="https://i.pinimg.com/originals/6e/7f/45/6e7f45f6213d4121c24aa40d7113836e.jpg"
+          alt="wanderlei">
+        <img id="gracie" class="img-hidden" src="http://cdn2.sbnation.com/imported_assets/1033678/Gracie_204.jpg" alt="gracie">
+        <img id="m-page" class="img-hidden" src="https://usatmmajunkie.files.wordpress.com/2016/08/michael-page-bellator-158-1.jpg?w=1000&h=600&crop=1"
+          alt="michael page">
+        <img id="cro-cop" class="img-hidden" src="http://2.bp.blogspot.com/-GC0ZzD0Tu48/UdD5oa7zDAI/AAAAAAAAA0E/w1c1M_UckIQ/s500/k1crocop.jpg">
+      </div>
+    </div>
+    <h2><i>Click the headlines to review and comment on the latest news and articles from around MMA</i></h2>
+    <div id="articles"></div>
+    <div id="notes"></div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

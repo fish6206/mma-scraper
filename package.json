@@ -1,0 +1,31 @@
+{
+  "name": "mongoose_skeleton",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^5.4.2",
+    "request": "^2.79.0"
+  },
+  "keywords": [],
+  "description": "App that scrapes a site and allows user to add articles",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fish6206/scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fish6206/scraper/issues"
+  },
+  "homepage": "https://github.com/fish6206/scraper#readme",
+  "devDependencies": {}
+}
